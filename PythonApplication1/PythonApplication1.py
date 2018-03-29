@@ -4,7 +4,7 @@ import csv
 inFile = "c:\\scouting\\Cheesy.csv";
 outFile = "c:\\scouting\\thisistherightresultthistimeforsurepositive3.3.3.csv";
 
-def readcsv():	
+def readcsv():
     matrix = []
     rowData = []
     vector = []
@@ -71,10 +71,10 @@ def GEPP(A, b, doPricing = True):
         fileData.append((b[k] - np.dot(A[k,k+1:],x[k+1:]))/A[k,k])
     f=open(outFile,"wb")
 
-    for rowData in fileData:
-        print >> f, str(rowData[0]) + ','
+    for k in range(n):
+        print >> f, str(x[k]) + ','
     f.close()
-    #return x
+    return x
 
 
 if __name__ == "__main__":
@@ -87,6 +87,6 @@ if __name__ == "__main__":
     #               [4.],
     #               [2.],
     #               [2.]])
-    GEPP(np.copy(A), np.copy(b), doPricing = False)
-    GEPP(A,b)
+    print GEPP(np.copy(A), np.copy(b), doPricing = False)
+    print GEPP(A,b)
 
