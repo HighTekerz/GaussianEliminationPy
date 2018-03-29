@@ -10,12 +10,12 @@ def readcsv():
     vector = []
     vectorRow = []
 
-    with open(inFile, 'rb') as csvfile:
+    with open(inFile, newline='') as csvfile:
         reader = csv.reader(csvfile, delimiter=',', quotechar='|')
         for row in reader:
             for i in list(row):
                rowData.append(float(i))
-            print ', '.join(row)
+            print(', '.join(row))
             vectorRow.append (rowData.pop(0))
             vector.append (vectorRow)
             matrix.append (rowData)
@@ -69,10 +69,10 @@ def GEPP(A, b, doPricing = True):
     for k in range(n-1, -1, -1):
         x[k] = (b[k] - np.dot(A[k,k+1:],x[k+1:]))/A[k,k]
         fileData.append((b[k] - np.dot(A[k,k+1:],x[k+1:]))/A[k,k])
-    f=open(outFile,"wb")
+    f=open(outFile,"w")
 
     for k in range(n):
-        print >> f, str(x[k]) + ','
+        f.write(str(x[k]) + ',\n')
     f.close()
     return x
 
@@ -87,6 +87,6 @@ if __name__ == "__main__":
     #               [4.],
     #               [2.],
     #               [2.]])
-    print GEPP(np.copy(A), np.copy(b), doPricing = False)
-    print GEPP(A,b)
+    print(GEPP(np.copy(A), np.copy(b), doPricing = False))
+    print(GEPP(A,b))
 
