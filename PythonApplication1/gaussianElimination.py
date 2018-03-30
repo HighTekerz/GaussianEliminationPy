@@ -1,5 +1,5 @@
 import numpy as np
-import csv
+import csv, json
 
 #
 # settings.json has the file settings
@@ -62,6 +62,7 @@ def GEPP(A, b, doPricing = True):
                 b[[k,maxindex]] = b[[maxindex, k]]
         else:
             if A[k, k] == 0:
+                return 0
                 raise ValueError("Pivot element is zero. Try setting doPricing to True.")
         #Eliminate
         for row in range(k+1, n):

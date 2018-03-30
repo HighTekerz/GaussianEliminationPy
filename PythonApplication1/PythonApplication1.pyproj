@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>af40ed59-0c9c-4acf-9cba-897580300811</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>getBlueAlliance.py</StartupFile>
+    <StartupFile>gaussianElimination.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
