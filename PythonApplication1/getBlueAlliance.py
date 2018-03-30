@@ -13,7 +13,6 @@ with open('settings.json') as json_file:
     settings = json.load(json_file)
     outfile = settings['bluealliance']['outfile']
 
-outFile = "c:\\scouting\\teamdata.csv"
 url = "https://www.thebluealliance.com/api/v3/teams/2"
 headers = {'X-TBA-Auth-Key': 'K8xmQc6P0e8trnfxLXl7kCgYGX4bNxx7WZVWyWIQcq1kcgVimIJR1Mc1XV67UWpH'}
 r = req.get(url, headers = headers)
