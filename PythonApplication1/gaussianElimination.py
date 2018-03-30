@@ -6,8 +6,8 @@ import csv
 
 with open('settings.json') as json_file:  
     settings = json.load(json_file)
-    infile = settings['gaussian']['infile']
-    outfile = settings['gaussian']['outfile']
+    inFile = settings['gaussian']['infile']
+    outFile = settings['gaussian']['outfile']
 
 def readcsv():
     matrix = []
