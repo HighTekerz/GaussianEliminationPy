@@ -25,10 +25,16 @@
     <Compile Include="getBlueAlliance.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="PythonApplication1.py" />
+    <Compile Include="reference.json">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="gaussianElimination.py" />
   </ItemGroup>
   <ItemGroup>
     <InterpreterReference Include="Global|PythonCore|3.6" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="settings.json" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

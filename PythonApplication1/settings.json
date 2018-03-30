@@ -1,0 +1,11 @@
+{
+  "gaussian": {
+    "infile": "c:\\scouting\\Cheesy.csv",
+    "outfile": "c:\\scouting\\thisistherightresultthistimeforsurepositive3.3.3.csv"
+  },
+  "bluealliance": {
+    "outfile": "c:\\scouting\\teamdata.csv"
+  }
+}
+
+

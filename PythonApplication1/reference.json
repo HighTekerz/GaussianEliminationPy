@@ -1,0 +1,42 @@
+{
+    next_event: {
+        "address": "28900 124th Ave SE, Auburn, WA 98092, USA",
+        "city": "Auburn",
+        "country": "USA",
+        "district": {
+            "abbreviation": "pnw",
+            "display_name": "Pacific Northwest",
+            "key": "2018pnw",
+            "year": 2018
+        },
+        "division_keys": [],
+        "end_date": "2018-03-31",
+        "event_code": "waamv",
+        "event_type": 1,
+        "event_type_string": "District",
+        "first_event_code": "WAAMV",
+        "first_event_id": "28007",
+        "gmaps_place_id": "ChIJH3-eMzNfkFQRBFmpP21suu0",
+        "gmaps_url": "https://maps.google.com/?cid=17130123349132400900",
+        "key": "2018waamv",
+        "lat": 47.341990699999997,
+        "lng": -122.17198070000001,
+        "location_name": "Auburn Mountainview High School",
+        "name": "PNW District Auburn Mountainview Event",
+        "parent_event_key": null,
+        "playoff_type": null,
+        "playoff_type_string": null,
+        "postal_code": "98092",
+        "short_name": "Auburn Mountainview",
+        "start_date": "2018-03-29",
+        "state_prov": "WA",
+        "timezone": "America/Los_Angeles",
+        "webcasts": [{
+                "channel": "firstwa_blue",
+                "type": "twitch"
+            }],
+        "website": "http://www.firstwa.org/",
+        "week": 4,
+        "year": 2018
+    },
+}

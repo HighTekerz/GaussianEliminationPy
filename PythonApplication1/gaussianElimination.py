@@ -1,8 +1,13 @@
 import numpy as np
 import csv
 
-inFile = "c:\\scouting\\Cheesy.csv";
-outFile = "c:\\scouting\\thisistherightresultthistimeforsurepositive3.3.3.csv";
+#
+# settings.json has the file settings
+
+with open('settings.json') as json_file:  
+    settings = json.load(json_file)
+    infile = settings['gaussian']['infile']
+    outfile = settings['gaussian']['outfile']
 
 def readcsv():
     matrix = []
