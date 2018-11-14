@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>af40ed59-0c9c-4acf-9cba-897580300811</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>gaussianElimination.py</StartupFile>
+    <StartupFile>getBlueAlliance.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -29,6 +29,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="gaussianElimination.py" />
+    <Compile Include="TBAAPI.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <InterpreterReference Include="Global|PythonCore|3.6" />
